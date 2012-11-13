@@ -45,7 +45,7 @@ Anyone is welcome to contribute.
 
 FAQ's
 -----
-Q: Which ones have actual code?
+Q: Which works have actual code?
 A: This publication was small and didn't have a lot of room to print code. There are, however a few that had excerpts:
 >"Untitled" (Jean H. Bevis) - Vol.1 No.4, pg. 8
 >"Untitled" (W.G. Wolfgang) - Vol.1 No.4, pg. 10-17
