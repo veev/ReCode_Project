@@ -61,11 +61,9 @@ void keyPressed() {
   }
   else if (key == '+') {
     if (ease > 0.15) ease-=0.1;
-    println(ease);
   }
   else if (key == '-') {
     if (ease < 1.0) ease+=0.1;
-    println(ease);
   }
 }
 
