@@ -29,27 +29,34 @@ void draw() {
   background(255);
   
   // line length (hypotenuse)
-  float h = cos(radians(30)) * _size;
+  float h = cos(THIRD_PI / 2) * _size;
   
   for (int i = 0; i <= _width / (_size * 3); i++) {
-    for (int j = 0; j <= (_height / (_size * sin(radians(60)))) + 1; j++) {
+    for (int j = 0; j <= (_height / (_size * sin(THIRD_PI))) + 1; j++) {
 
-      // reference points
+      // reference points (centre of each hexagon)
       float x = i * _size * 3 + (_size / 2);
-      float y = j * _size * sin(radians(60));
+      float y = j * _size * sin(THIRD_PI);
+      // offset each odd row
       if (j % 2 > 0) {
         x += _size * 1.5;
       }
 
-      // random hexagon 'rotation' (0, 120, 240)
-      int r = int(random(0, 3)) * 120;
-
-      // draw line
-      line(x - cos(radians(r + 30)) * h, y - sin(radians(r + 30)) * h, x + cos(radians(r + 30)) * h, y + sin(radians(r + 30)) * h);
-
-      // draw arcs
-      arc(x - cos(radians(r + 120)) * _size, y - sin(radians(r + 120)) * _size, _size, _size, radians(r + 60), radians(r + 180)); 
-      arc(x + cos(radians(r + 120)) * _size, y + sin(radians(r + 120)) * _size, _size, _size, radians(r - 120), radians(r)); 
+      pushMatrix();
+      
+        translate(x, y);
+        
+        // random hexagon 'rotation' (0, 120, 240 degrees)
+        rotate(int(random(0, 3)) * THIRD_PI);
+    
+        // draw line
+        line(-cos(THIRD_PI / 2) * h, -sin(THIRD_PI / 2) * h, cos(THIRD_PI / 2) * h, sin(THIRD_PI / 2) * h);
+  
+        // draw arcs
+        arc(-cos(THIRD_PI * 2) * _size, -sin(THIRD_PI * 2) * _size, _size, _size, THIRD_PI, PI); 
+        arc( cos(THIRD_PI * 2) * _size,  sin(THIRD_PI * 2) * _size, _size, _size, THIRD_PI * -2, 0); 
+      
+      popMatrix();
 
     }  
   }
