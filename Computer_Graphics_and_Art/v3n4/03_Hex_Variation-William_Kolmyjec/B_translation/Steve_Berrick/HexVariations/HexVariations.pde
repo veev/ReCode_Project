@@ -32,11 +32,11 @@ void draw() {
   float h = cos(THIRD_PI / 2) * _size;
   
   for (int i = 0; i <= _width / (_size * 3); i++) {
-    for (int j = 0; j <= (_height / (_size * sin(THIRD_PI))) + 1; j++) {
+    for (int j = 0; j <= (_height / h) + 1; j++) {
 
       // reference points (centre of each hexagon)
       float x = i * _size * 3 + (_size / 2);
-      float y = j * _size * sin(THIRD_PI);
+      float y = j * h;
       // offset each odd row
       if (j % 2 > 0) {
         x += _size * 1.5;
