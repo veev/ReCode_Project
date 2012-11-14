@@ -31,11 +31,11 @@ void draw() {
   // line length (hypotenuse)
   float h = cos(radians(30)) * _size;
   
-  for (int i = 0; i <= _width; i++) {
-    for (int j = 0; j <= _height; j++) {
+  for (int i = 0; i <= _width / (_size * 3); i++) {
+    for (int j = 0; j <= (_height / (_size * sin(radians(60)))) + 1; j++) {
 
       // reference points
-      float x = i * _size * 3 + _size / 2;
+      float x = i * _size * 3 + (_size / 2);
       float y = j * _size * sin(radians(60));
       if (j % 2 > 0) {
         x += _size * 1.5;
