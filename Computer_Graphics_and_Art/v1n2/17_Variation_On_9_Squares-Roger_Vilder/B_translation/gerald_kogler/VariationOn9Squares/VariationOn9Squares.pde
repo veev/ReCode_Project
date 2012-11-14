@@ -15,7 +15,7 @@ int num = 3;        //num of lines and columns in grid
 float margin = 30;  //margin around rectangles areas
 float overlap = 40; //overlap of reactangle areas
 float ease = 0.3;   //easing/division factor for non/linear distribution
-char mode = 'l';    //mode 'l'==linear, 'e'==exponential distribution
+char mode = 'e';    //mode 'l'==linear, 'e'==exponential distribution
 color bg = 0; 
 float r;
 Square[] squares = new Square[num*num];
