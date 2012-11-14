@@ -1,3 +1,6 @@
 NOTES
 
 (Include any notes to other contributors here. Please include your name and the date. Only add contact info if necessary)
+
+Mitchell Whitelaw - 14 Nov 2012
+My translation provides a way to draw Sykora's modules on a grid, but it doesn't address the distribution of those modules. Here the distribution is random - not the case in the "Structure" example. 
