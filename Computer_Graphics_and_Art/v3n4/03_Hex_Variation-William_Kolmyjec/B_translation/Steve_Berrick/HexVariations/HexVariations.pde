@@ -9,7 +9,7 @@
 
 int _width = 600;
 int _height = 900;
-int _size = 20;
+int _size = 20;     // hexagon radius
 
 void setup() {
   
@@ -29,7 +29,7 @@ void draw() {
   background(255);
   
   // line length (hypotenuse)
-  float h = cos(THIRD_PI / 2) * _size;
+  float h = sin(THIRD_PI) * _size;
   
   for (int i = 0; i <= _width / (_size * 3); i++) {
     for (int j = 0; j <= (_height / h) + 1; j++) {
@@ -50,11 +50,11 @@ void draw() {
         rotate(int(random(0, 3)) * THIRD_PI);
     
         // draw line
-        line(-cos(THIRD_PI / 2) * h, -sin(THIRD_PI / 2) * h, cos(THIRD_PI / 2) * h, sin(THIRD_PI / 2) * h);
+        line(0, -h, 0, h);
   
         // draw arcs
-        arc(-cos(THIRD_PI * 2) * _size, -sin(THIRD_PI * 2) * _size, _size, _size, THIRD_PI, PI); 
-        arc( cos(THIRD_PI * 2) * _size,  sin(THIRD_PI * 2) * _size, _size, _size, THIRD_PI * -2, 0); 
+        arc(-_size, 0, _size, _size, -THIRD_PI,     THIRD_PI);
+        arc( _size, 0, _size, _size,  THIRD_PI * 2, THIRD_PI * 4); 
       
       popMatrix();
 
