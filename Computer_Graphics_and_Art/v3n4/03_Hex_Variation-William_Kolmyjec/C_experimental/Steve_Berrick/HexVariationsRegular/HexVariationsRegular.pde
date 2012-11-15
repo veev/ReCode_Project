@@ -75,7 +75,7 @@ void mousePressed() {
 
 void mouseMoved() {
    
-  mod = int(width * 2 / mouseX);
+  mod = (mouseX % width / (_size * 3)) + 1;
   redraw();
    
 }
