@@ -50,7 +50,6 @@ A: This publication was small and didn't have a lot of room to print code. There
 * "Untitled" (Jean H. Bevis) - Vol.1 No.4, pg. 8
 * "Untitled" (W.G. Wolfgang) - Vol.1 No.4, pg. 10-17
 * "Untitled" (various) - Vol.1 No. 4, pg. 28
-* "Organinc Illusion" (William Kolomyjec) - Vol.2 No.3, pg. 13
 * "Random Squares" (William Kolomyjec) - Vol.2 No.3, pg. 14-15
 * "Continuous Line Design" (Joy Pearson) - Vol.2 No.4, pg. 22-25
 
