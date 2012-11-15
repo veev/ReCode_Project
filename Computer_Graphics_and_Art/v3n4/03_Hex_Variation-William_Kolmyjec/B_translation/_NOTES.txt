@@ -3,4 +3,4 @@ NOTES
 (Include any notes to other contributors here. Please include your name and the date. Only add contact info if necessary)
 
 Steve Berrick - 14 Nov 2012
-My translation draws out Hex Variations, a simple solution but could be optimised. Click to redraw.
+My translation draws out Hex Variations with a simple solution. Click to redraw.
