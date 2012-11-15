@@ -1,3 +1,6 @@
 NOTES
 
 (Include any notes to other contributors here. Please include your name and the date. Only add contact info if necessary)
+
+Steve Berrick - 15 Nov 2012
+My translation removes the randomness from the original work, instead using mouseX to adjust the repeat cycle. Hit 'S' to save frame as .jpg
