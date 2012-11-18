@@ -1,3 +1,9 @@
 NOTES
 
 (Include any notes to other contributors here. Please include your name and the date. Only add contact info if necessary)
+
+The program consists of three call orders:
+
+1. Size of the sheet of paper.
+2. A scale distortion of 1:2 in one direction.
+3. The routine SNEKAD with eight parameters. The routine SNEKAO proves here two elements: 1. <horizontal lines> 2. <vertical lines>. These squares occur in a random order. The scale distortion of 1:2 stretches the elements in one direction to produce graying effects.
